@@ -1,0 +1,125 @@
+/* Very Easy: Create one 8x8 checkerboard similar to the picture attached using a table. Bonus: use only 
+divs to create the board. */
+
+#chessboard,
+.blackSquare,
+.whiteSquare {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+#chessboard {
+  width: 384px;
+  height: 384px;
+  border: 4px solid #ff0000;
+}
+
+.blackSquare,
+.whiteSquare {
+  width: 48px;
+  height: 48px;
+  float: left;
+}
+
+.blackSquare {
+  background-color: #000000;
+}
+
+.whiteSquare {
+  background-color: #ffffff;
+}
+
+
+
+/* Easy: Utilizing a table with different styles, create an image of the American flag. Use the image 
+provided for the stars.
+*/
+.container{
+  height: 900px;
+  
+}
+.flag{
+ display: flex ;
+ flex-direction: row;
+  border:2px solid black;
+  height: 400px;
+}
+
+.stars{
+  flex: 1;
+  border: 2px solid blue;
+  width: 25%;
+  
+
+}
+.star-strips{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  
+}
+
+.strips, .stripsRed{
+  
+  flex: 1;
+  border: 2px solid blue;
+  height: 55px;
+}
+.stripsRed{
+  background: red;
+}
+
+
+/* 
+Medium: Create a product grid of 2 rows, totaling to a required 8 products. Each product must include a 
+title, price, image and a short description. Have each product link back to its own page on Amazon / 
+Walmart / Target.
+See next page... */
+
+.features {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 0 2em 0;
+}
+
+.features article {
+  padding: 1em 0.85em 0.1em 1em;
+  background-color: #ffffff;
+  /* border-radius: 2px; */
+  margin: 1.5em 1.5em 1.5em 0;
+  width: calc(25% - 1.5em);
+}
+
+.features article .image {
+  border-radius: 5px 5px 0 0;
+  display: block;
+  margin-bottom: 1.75em;
+  margin-left: -1.5em;
+  margin-top: -1.75em;
+  position: relative;
+  width: calc(50% + 3.5em);
+}
+
+.features article .image img {
+  border-radius: 5px 5px 0 0;
+  width: 95%;
+}
+
+/* Hard - Complete the Introduction to  Responsive Web Design Challenges.  
+https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-principles/
+
+
+Be sure to create an account at www.freecodecamp.org/  You need to complete the following exercises: 
+
+Create a Media Query, Make an Image Responsive, Use a Retina Image for Higher Resolution and Make Typography Responsive. 
+
+Please update your profile so that your first and last name are clearly displayed. 
+
+Submit a full screenshot of your completed progress bar that includes your profile name (located in the upper, right-hand corner of the screen. 
+
+Note for Very Easy and Easy: Each of the images can be found in Canvas that you will reproduce 
+entirely in CSS. 
+Unless otherwise noted, the divs are all 100px x 100px.
+Submission
+Submit the link to your repo through Canvas.   */
